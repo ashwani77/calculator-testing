@@ -2,19 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: calculator
-  name: calculator
+    app: calculatortest
+  name: calculatortest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: calculator
+      app: calculatortest
   template:
     metadata:
       labels:
-        app: calculator
+        app: calculatortest
     spec:
       containers:
       - image: gcr.io/wide-cathode-295207/calculator:latest
         imagePullPolicy: Always
-        name: calculator
+        name: calculatortest
