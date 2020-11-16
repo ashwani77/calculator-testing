@@ -2,8 +2,8 @@ apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
   labels:
-    app: httpd-test
-  name: httpd-test-hpa-mw3y
+    app: calculatortest
+  name: calculatortest-hpa-mw3y
 spec:
   maxReplicas: 5
   metrics:
@@ -15,4 +15,4 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: httpd-test
+    name: calculatortest
