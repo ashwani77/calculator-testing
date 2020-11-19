@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:8.0.20-jre8
 MAINTAINER Ashwani
 COPY ${WAR_FILE} /usr/local/tomcat/webapps/
 COPY tomcat-users.xml /usr/local/tomcat/conf/
